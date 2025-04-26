@@ -1,0 +1,131 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+min-height: 100vh;
+background-size: cover;
+background-image: url(../assets/DarkGradient.svg);
+background-position: center;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'Poppins', sans-serif;
+color: #fff;
+}
+.container {
+width: 350px;
+height: 700px;
+border-radius: 30px;
+padding: 20px;
+background: rgba(255, 255, 255, 0.05);
+backdrop-filter: blur(30px);
+box-shadow: 0 0 30px rgba(0, 0, 0, 0.5), 0 0 80px rgba(128, 0, 255, 0.7);
+position: relative;
+overflow: hidden;
+}
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.icon-button {
+background: transparent;
+border: none;
+color: #fff;
+font-size: 1.5rem;
+cursor: pointer;
+}
+.profile-pic {
+margin: 40px auto 20px;
+width: 200px;
+height: 200px;
+border-radius: 50%;
+overflow: hidden;
+border: 5px solid rgba(255, 255, 255, 0.2);
+box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+.profile-pic img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.neon-text {
+    font-size: 3rem;
+    color: #00ffc6;
+    text-shadow: 0 0 0px #00ffc6, 0 0 1px #00ffc6, 0 0 10px #00ffc6;
+}
+.glass-card {
+    display: flex;
+    height: 350px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.3);
+    flex-direction: column;
+    justify-content: space-between;
+}
+a {
+    text-decoration: none;
+    color: black
+}
+.glass-card h2 {
+font-size: 1.8rem;
+line-height: 1.2;
+margin-bottom: 10px;
+}
+.glass-card span {
+font-weight: 700;
+}
+.glass-card p {
+font-size: 0.9rem;
+margin: 10px 0 20px;
+color: #ddd;
+}
+.card-footer {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.neumorphic-section {
+    margin: 0 0 18px 0;
+    border-radius: 8px;
+    box-shadow: 2px 4px 20px #0a0a0a66;
+}
+.skip {
+color: #ccc;
+text-decoration: none;
+font-size: 0.9rem;
+}
+.next-button {
+background: linear-gradient(135deg, #00ffc6, #00d4ff);
+border: none;
+padding: 10px 20px;
+border-radius: 20px;
+font-weight: bold;
+color: #121212;
+cursor: pointer;
+box-shadow: 0 0 10px #00ffc6, 0 0 20px #00ffc6;
+}
+.pagination {
+display: flex;
+justify-content: center;
+margin-top: 20px;
+gap: 8px;
+}
+.dot {
+width: 8px;
+height: 8px;
+background: #ccc;
+border-radius: 50%;
+opacity: 0.6;
+}
+.dot.active {
+width: 10px;
+height: 10px;
+background: #00ffc6;
+opacity: 1;
+}
